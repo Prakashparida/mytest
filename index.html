@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Section 2: JavaScript Language Basics</title>
+    </head>
+
+    <body>
+        <h1>Section 2: JavaScript Language Basics</h1>
+    </body>
+    <script>
+          function retairment(retairmentAge){
+            return function(dateofretair){
+                var info = " is your reatair age"
+                var age = 2018 - retairmentAge;
+                console.log((age - retairmentAge) + info);
+            }
+          }
+          var ret = retairment(66);
+          ret(1990);
+
+          function letTo(clser){
+              function add(ltd){
+                  console.log(clser + ltd);
+              }
+              return add;
+          };
+          var ans = new letTo(10);
+          ans(2);
+
+         function rectAria(width, height){
+            return width * height
+         }
+
+         var res = rectAria(6, 6);
+         console.log(res)
+
+    </script>
+</html>
